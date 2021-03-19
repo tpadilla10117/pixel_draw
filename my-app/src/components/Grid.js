@@ -9,7 +9,7 @@ const Grid = (props) => {
 
     const {activeColor, cellList, setCellList} = props;
 
-    return <div className="grid"> {
+    return  <div className="grid"> {
         
         cellList.map((cell, index) =>
             <Cell key={"grid-" + index} color={cell.color} 
@@ -22,7 +22,8 @@ const Grid = (props) => {
         />)
 
         }
-    </div>
+
+    </div> 
 }
 
 export default Grid;
