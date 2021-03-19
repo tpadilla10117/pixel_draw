@@ -2,11 +2,10 @@ import React from 'react';
 
 /* The Cell component represents the fundamental "clickable object" */
 
-/* <Cell /> in both Palette and Grid. */
+/* <Cell /> is used in both Palette and Grid. */
 
 const Cell = (props) => {
 
-    /* Create constants for color, isActive, and handleClick, reading the value off of props */
     const {color, isActive, handleClick } = props;
 
     return ( 

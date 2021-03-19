@@ -15,11 +15,8 @@ import {
 
 const App = () => {
 
-
   const [activeColor, setActiveColor] = useState(COLORS[0]);
   const [cellList, setCellList] = useState(buildCellList() );
-
-
 
   return (
     <div className="app">
