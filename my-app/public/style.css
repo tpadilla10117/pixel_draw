@@ -45,7 +45,29 @@
     width: 360px;
   }
   
-  .grid .cell {
+.grid .cell {
     border: 2px solid #888;
     background: white;
+}
+
+.palette {
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.palette .cell {
+    transition: 0.3s all;
+    width: 36px;
+    height: 36px;
+    border: 2px solid black;
+}
+
+.palette .cell.active {
+    transform: rotate(45deg) scale(1.2);
+    border: 4px solid gold;
+    box-shadow: 0 2px 8px -3px black;
+    z-index: 1000;
   }

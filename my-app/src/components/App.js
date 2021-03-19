@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import Grid from './Grid';
 import Header from './Header';
+import Palette from './Palette';
 
 /* For access to COLORS and buildCellList for our initial state objects */
 
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
+      <Palette activeColor={activeColor} setActiveColor={setActiveColor}/>
       <Grid cellList={cellList} setCellList={setCellList} activeColor={activeColor} />
     </div>
   );
