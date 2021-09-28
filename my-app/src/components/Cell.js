@@ -10,7 +10,7 @@ const Cell = (props) => {
 
     return ( 
         <div className={isActive ? "cell active" : "cell"} style={{ backgroundColor: color }} onClick={handleClick}>
-        </div>
+        </div>  
     )
 }
 
